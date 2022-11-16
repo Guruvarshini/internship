@@ -1,0 +1,21 @@
+a=int(input("Enter the first number,A:"))
+b=int(input("Enter the second number,B:"))
+c=input("Enter the operation to be performed:('+' for addition,'-' for subtraction,'*' for multiplication,'/' for division,'%' for modulus)")
+if c=='+':
+    print("The sum of ",a," and ",b," is ",a+b)
+elif c=='-':
+    if a>b:
+        print("The difference of ",a," and ",b," is",a-b)
+    else:
+        print("The difference of ",a," and ",b," is ",b-a)
+elif c=='*':
+    print("The product of ",a," and ",b," is ",a*b)
+elif c=='/':
+    if b!=0:
+        print("The division of ",a," and ",b," is ",a/b)
+    else:
+        print("Division By Zero")
+elif c=='%':
+    print("The modulus of ",a," and ",b," is ",a%b)
+else:
+    print("The operator is invalid")
